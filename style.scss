@@ -18,7 +18,7 @@
 body {
   color: white !important;
   font-family: "Poppins", sans-serif !important;
-  background-color: rgba(0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0.83) !important;
 
 }
 
@@ -707,9 +707,20 @@ header {
   }
 
   .container-banner {
+
+
+    display: grid;
+    grid-template-columns: 1fr 1fr !important;
+    grid-template-rows: 1fr;
+    
     .img-banner {
-      content: url(images/_MG_8280.JPG);
+      content: url(images/connor-botts-k6rQYHBIAfs-unsplash-removebg-preview.png);
+      width:1300px !important;
+      height:100vh !important;
       opacity: 0.35 !important;
+      grid-column: 2/3 !important;
+      grid-row: 1/2;
+      
     }
 
     .container-title {
